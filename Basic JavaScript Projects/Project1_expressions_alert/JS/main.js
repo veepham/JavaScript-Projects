@@ -1,2 +1,2 @@
-var A = "this is a string";
+var A = "Let\'s go!";
 window.alert(A);
