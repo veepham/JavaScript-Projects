@@ -4,5 +4,13 @@ function addition_Function (){
 }
 function subtraction_Function () {
     var subtraction = 5 - 2;
-    document.getElementById("math").innerHTML = "5 - 2 = " + subtraction
+    document.getElementById("math2").innerHTML = "5 - 2 = " + subtraction
+}
+function multiplication () {
+    var simple_Math = 6 * 8;
+    document.getElementById("Multiply").innerHTML = "6 x 8 = " + simple_Math;
+}
+function division (){
+    var divide = 48 / 6;
+    document.getElementById("divide").innerHTML = "48 / 6 = " + divide;
 }
