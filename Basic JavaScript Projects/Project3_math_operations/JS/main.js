@@ -33,3 +33,5 @@ document.write(A);
 var B = 5.25;
 B--;
 document.write(B);
+
+window.alert(Math.random() * 100);
