@@ -26,3 +26,10 @@ function negation_Operator(){
     var x = 10;
     document.getElementById("number").innerHTML = -x;
 }
+var A = 5;
+A++;
+document.write(A);
+
+var B = 5.25;
+B--;
+document.write(B);
