@@ -14,3 +14,7 @@ function division (){
     var divide = 48 / 6;
     document.getElementById("divide").innerHTML = "48 / 6 = " + divide;
 }
+function more_Math(){
+    var math = (1 + 2) * 10 / 2 - 5;
+    document.getElementById("maths").innerHTML = "1 plus 2, multiplies by 10, divided in hald and then subtracted by 5 equals " + math;
+}
