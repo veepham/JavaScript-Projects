@@ -4,8 +4,9 @@ function my_Dictionary(){
         Color: "Tan",
         Breed: "Havanese Mix",
         Age: 10,
-        Sound: "Woof!"
+        Sound: "Woof!",
         Sound: "Bark!"
     };
+    delete Animal.Sound;
     document.getElementById("Dictionary").innerHTML = Animal.Sound;
 }
