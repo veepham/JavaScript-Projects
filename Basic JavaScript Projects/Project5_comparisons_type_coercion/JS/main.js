@@ -9,4 +9,4 @@ function my_Function3() {
 }
 
 document.write(100<2);
-console.log(2 + 2);
+console.log(2 > 2);
