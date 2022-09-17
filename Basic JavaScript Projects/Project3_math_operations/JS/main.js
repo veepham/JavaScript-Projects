@@ -1,3 +1,5 @@
+window.alert(Math.random() * 100);
+
 function addition_Function (){
     var addition = 2 + 2;
     document.getElementById("math").innerHTML = "2 + 2 = " + addition;
@@ -26,12 +28,18 @@ function negation_Operator(){
     var x = 10;
     document.getElementById("number").innerHTML = -x;
 }
+function increment(){
 var A = 5;
 A++;
-document.write(A);
+document.getElementById("A").innerHTML = A;
+}
 
+function decrement(){
 var B = 5.25;
 B--;
-document.write(B);
+document.getElementById("B").innerHTML = B;
+}
 
-window.alert(Math.random() * 100);
+function math_Object(){
+    document.getElementById("object").innerHTML = "Rounding 4.6 to the nearest integer equals: " + Math.round(4.6);
+}
