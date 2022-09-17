@@ -9,3 +9,5 @@ function my_Function2() {
 function my_Function3() {
     document.getElementById("Test3").innerHTML = isNaN('123');
 }
+
+document.write(-2E310);
