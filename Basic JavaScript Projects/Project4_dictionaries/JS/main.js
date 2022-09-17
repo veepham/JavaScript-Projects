@@ -5,6 +5,7 @@ function my_Dictionary(){
         Breed: "Havanese Mix",
         Age: 10,
         Sound: "Woof!"
+        Sound: "Bark!"
     };
     document.getElementById("Dictionary").innerHTML = Animal.Sound;
 }
