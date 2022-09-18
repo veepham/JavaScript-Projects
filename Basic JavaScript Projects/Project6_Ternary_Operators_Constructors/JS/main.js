@@ -1,4 +1,4 @@
-function Vote_Function(){       //ternary//
+function Vote_Function(){       //ternary operation with browser input//
     var Age, Can_Vote;
     Age = document.getElementById("Age").value;
     Can_Vote = (Age < 18) ? "You are too young": "You are old enough";
