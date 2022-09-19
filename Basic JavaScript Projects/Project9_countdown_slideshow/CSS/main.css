@@ -81,7 +81,7 @@
     from {opacity: .4}
     to {opacity: 1}
 }
-
+/*Object fit so height is consistent among images*/
 img {
     width: 100%;
     height: 400px;
