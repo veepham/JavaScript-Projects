@@ -21,12 +21,26 @@ let str = "Please locate the word 'dog' in this sentence";
 document.getElementById("search").innerHTML = str.search("dog");
 }
 
-function string_Method(){
+function string_Method(){       //Numbers to string//
     var X = 1312;
     document.getElementById("Numbers_to_string").innerHTML = X.toString();
 }
 
-function precision_Method(){
+function precision_Method(){        //Precision Method//
     var A = 12.131213121312;
     document.getElementById("Precision").innerHTML= A.toPrecision(10);
+}
+
+function fixed_Method(){        //toFixed method//
+    let B = 4.5678;
+    document.getElementById("Fix").innerHTML =
+        B.toFixed(0) + "<br>" +
+        B.toFixed(4) + "<br>" +
+        B.toFixed(6);
+}
+
+function value_Method(){        //valueOf method//
+    let C = 444;
+    document.getElementById("Value_Number").innerHTML =
+    C.valueOf() + "<br>" + (444).valueOf() + "<br>" + (400 + 44).valueOf();
 }
