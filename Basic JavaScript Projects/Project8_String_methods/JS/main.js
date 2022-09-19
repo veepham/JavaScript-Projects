@@ -20,3 +20,8 @@ function mySearch(){        //search method//
 let str = "Please locate the word 'dog' in this sentence";      
 document.getElementById("search").innerHTML = str.search("dog");
 }
+
+function string_Method(){
+    var X = 1312;
+    document.getElementById("Numbers_to_string").innerHTML = X.toString();
+}
