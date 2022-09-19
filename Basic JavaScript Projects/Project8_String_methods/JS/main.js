@@ -25,3 +25,8 @@ function string_Method(){
     var X = 1312;
     document.getElementById("Numbers_to_string").innerHTML = X.toString();
 }
+
+function precision_Method(){
+    var A = 12.131213121312;
+    document.getElementById("Precision").innerHTML= A.toPrecision(10);
+}
