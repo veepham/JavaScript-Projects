@@ -24,6 +24,6 @@ function for_Loop(){
     }
     document.getElementById("List_Cities").innerHTML = Content;
 }
-function array_Function(){
+function array_Function(){      //using document.getElementById to dispay a value of array//
     document.getElementById("Array").innerHTML = "The next city I am travelling to will be " + Cities[1];
 }
