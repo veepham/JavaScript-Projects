@@ -27,3 +27,10 @@ function for_Loop(){
 function array_Function(){      //using document.getElementById to dispay a value of array//
     document.getElementById("Array").innerHTML = "The next city I am travelling to will be " + Cities[1];
 }
+
+function Constant_Function(){       //Constant function, dislaying property and value of constant//
+    const Car = {type: "crossover", make: "Honda", color: "green"};
+    Car.color = "gray";         //change property's value//
+    Car.model = "HR-V";         //adding a property with a value//
+    document.getElementById("Constant").innerHTML = "She drives a " + Car.make + " that is " + Car.color;
+}
