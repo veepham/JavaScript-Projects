@@ -34,3 +34,8 @@ function Constant_Function(){       //Constant function, dislaying property and 
     Car.model = "HR-V";         //adding a property with a value//
     document.getElementById("Constant").innerHTML = "She drives a " + Car.make + " that is " + Car.color;
 }
+
+document.getElementById("return").innerHTML = myFunction("Vivian");
+function myFunction(name) {
+    return "Hello " + name;     //return statement//
+}
