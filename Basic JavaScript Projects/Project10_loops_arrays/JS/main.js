@@ -39,3 +39,14 @@ document.getElementById("return").innerHTML = myFunction("Vivian");
 function myFunction(name) {
     return "Hello " + name;     //return statement//
 }
+
+let car = {
+    make: "Honda ",
+    model: "HR-V ",
+    year: "2016 ",
+    color: "green ",
+    description: function() {
+        return "The car is a " + this.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("Car_Object").innerHTML = car.description();
