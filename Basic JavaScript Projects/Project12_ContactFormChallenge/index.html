@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Challenge</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <script src="JS/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="form">
+            <form name="myForm" action="https://formspree.io/f/mjvzgand" onsubmit="return validateForm()" method="POST">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <input type="submit" value="Submit" >
+            </form>
+        </div>
+    </body>
+</html>

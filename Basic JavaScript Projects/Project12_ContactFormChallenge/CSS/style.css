@@ -1,0 +1,29 @@
+.form{
+    background-color: rgb(233, 210, 233);
+    width: 600px;
+    padding: 5%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+input[type=text]:focus{
+    background-color: rgb(212, 171, 195);
+}
+input[type=submit]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    
+}
+input[type=submit]:hover{
+    background-color: gray;
+}
