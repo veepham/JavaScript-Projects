@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(185, 153, 153);
+}
+#menuBG {
+    width: 700px;
+    height: 470px;
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#frmMenu {
+    width: 700px;
+    height: 200px;
+}
+
+#totalPrice{
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 250px;
+    height: 250px;
+    float: left;
+    border: 4px solid maroon;
+    border-radius: 3px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.right {
+    width: 250px;
+    height: 250px;
+    float: right;
+    border: 4px solid maroon;
+    border-radius: 3px;
+    margin: 10px -10px;
+    padding:10px;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 280px;
+    width: 150px;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-color: maroon;
+}
+#btnOrder:hover{
+    cursor: pointer;
+    background-color: rgba(255,150,150, 0.5)
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    color: maroon;
+}
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    color: maroon;
+}
+
+div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
