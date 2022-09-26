@@ -1,6 +1,6 @@
 let activePlayer = 'X';
 let selectedSquares = [];
-
+//function to place x or o //
 function placeXOrO(squareNumber){
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
         let select = document.getElementById(squareNumber);
@@ -12,7 +12,7 @@ function placeXOrO(squareNumber){
         selectedSquares.push(squareNumber + activePlayer);
 
         checkWinConditions();
-        if (activePlayer === 'X') {
+        if (activePlayer === 'X') {     //changing the active player//
             activePlayer = 'O';
         } else {
             activePlayer = 'X';
@@ -24,7 +24,7 @@ function placeXOrO(squareNumber){
         }
         return true;
     }
-    function computersTurn(){
+    function computersTurn(){       //random square select by computer//
         let success = false;
         let pickASquare;
         while (!success){
@@ -36,7 +36,7 @@ function placeXOrO(squareNumber){
         }
     }
 }
-
+//various win condition and th lin to draw if conditions met//
 function checkWinConditions(){
     if(arrayIncludes('0X', '1X', '2X')){drawWinLine(50,100,558,100)}
     else if(arrayIncludes('3X','4X', '5X')){drawWinLine(50,304,558,304)}
@@ -66,17 +66,17 @@ function checkWinConditions(){
         if (a === true && b === true && c === true) {return true;}
     }
 }
-
+//no click during computers turn//
 function disableClick(){
     body.style.pointerEvents = 'none';
     setTimeout(function() { body.style.pointerEvents = "auto"; }, 1000)
 }
-
+//function for audio//
 function audio(audioURL) {
     let audio = new Audio(audioURL);
     audio.play();
 }
-
+//function to draw line using HTML canvas element//
 function drawWinLine(coordX1, coordY1, coordX2, coordY2){
     const canvas = document.getElementById('win-lines');
     const c = canvas.getContext('2d');
@@ -106,7 +106,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2){
             if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
         }
     }
-    function clear() {
+    function clear() {      //clears canvas after line is drawn, reset game//
         const animationLoop = requestAnimationFrame(clear);
         c.clearRect(0,0,608,608);
         cancelAnimationFrame(animationLoop);
