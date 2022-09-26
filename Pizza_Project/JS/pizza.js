@@ -21,13 +21,36 @@ function getReceipt(){
         sizeTotal = 16;
     }
     runningTotal = sizeTotal;
-    console.log(selectedSize+" =$"+sizeTotal+".00");
-    console.log("size text1: " +text1);
+    console.log(selectedSize+" = $"+sizeTotal+".00");
+    console.log("size text1: "+text1);
+    console.log("subtotal: $"+runningTotal+".00");
+    getSauce(runningTotal,text1);
+}
+
+function getSauce(runningTotal, text1){
+    var sauceTotal = 0;
+    var sauceArray = document.getElementsByClassName("sauce");
+    for (var x = 0; x < sauceArray.length; x++) {
+        if (sauceArray[x].checked) {
+            var selectedSauce = sauceArray[x].value;
+            text1 = text1+selectedSauce+"<br>";
+        }
+    }
+    if (selectedSauce === "House Marinara") {
+        sauceTotal = 0;
+    } else if (selectedSauce === "White Sauce") {
+        sauceTotal = 0;
+    } else if (selectedSauce === "BBQ Sauce") {
+        sauceTotal = 0;
+    } else if (selectedSauce === "No Sauce") {
+        sauceTotal = 0;
+    } 
+    runningTotal = (runningTotal + sauceTotal);
+    console.log(selectedSauce+" =$"+sauceTotal+".00");
+    console.log("sauce text1: " +text1);
     console.log("subtotal: $"+runningTotal+".00");
     getTopping(runningTotal,text1);
 }
-
-//ADD FUNCTION TO SAUCES//
 
 function getTopping(runningTotal, text1) {
     var toppingTotal = 0;

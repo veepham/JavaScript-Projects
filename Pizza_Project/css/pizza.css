@@ -82,3 +82,7 @@ div {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
 }
+h6{
+    padding: 0;
+    margin: -10px 10px 10px 10px;
+}
