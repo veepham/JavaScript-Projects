@@ -32,7 +32,22 @@ function show(){
     };
     html += '</ul>';
     document.getElementById('todos').innerHTML = html;
+
+    var buttons = document.getElementsByClassName('remove');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', remove);
+    };
 }
 
 document.getElementById('add').addEventListener('click', add);
 show();
+
+function remove(){
+    var id = this.getAttribute('id');
+    var todos = get_todos();
+    todos.splice(id, 1);
+    localStorage.setItem('todo', JSON.stringify(todos));
+    show();
+
+    return false;
+}

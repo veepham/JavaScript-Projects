@@ -1,20 +1,27 @@
 html {
     font-family: "Avenir Next", Helvetica, sans-serif;
+    color: maroon;
     text-align: center;
     height: 100%;
 }
 body{
     max-width: 500px;
     margin: 0 auto;
-
+}
+#app{
+    background-color: lightpink;
+    border: 3px solid maroon;
+    border-radius: 8px;
     
 }
 input{
-    padding-top: 30px;
-    width: 500px;
-    height: 60px;
-    font-size: 40px;
-    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 450px;
+    height: 10px;
+    font-size:20px;
+    border: 1px solid black;
+    background-color: rgb(238, 206, 210);
 }
 input:focus {
     outline: none;
@@ -22,7 +29,7 @@ input:focus {
 
 li {
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
     list-style: none;
     margin: 0;    
 }
@@ -32,6 +39,19 @@ li {
 }
 footer{
     border: 1px solid black;
+    font-size: 12px;
     flex-shrink: 0;
+    background-color: rgb(238, 206, 210);
     
+}
+.remove {
+    padding-bottom: 5px;
+}
+button{
+    color: maroon;
+    background-color: pink;
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 3px;
+    font-weight: bold;
 }
