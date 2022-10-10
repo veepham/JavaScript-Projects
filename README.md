@@ -28,3 +28,6 @@ This respository will contain projects created during the Software Developer Boo
 **Project 13:** Data Attributes
 
 ## Tic Tac Toe Game
+An interactive game of tic-tac-toe!
+## To Do App
+Create a list of items to get done today
