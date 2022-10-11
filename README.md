@@ -27,6 +27,10 @@ This respository will contain projects created during the Software Developer Boo
 
 **Project 13:** Data Attributes
 
+## Calculator
+Basic four function calculator: add, subtract, multiply, and divide.
+## Pizza Menu
+A menu used to order pizza with various size options and multiple topping selections. The information input will then calculate the total price for the order.
 ## Tic Tac Toe Game
 An interactive game of tic-tac-toe!
 ## To Do App
